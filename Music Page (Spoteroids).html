@@ -1,46 +1,55 @@
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"> <!-- This is a meta tag which basically is an extension to showcase specific symbols in the browser -->
+<!-- all these <link> tags are font tags which support the different fonts in the code *you can either remove or change it*-->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/lucy-said-ok-personal-use" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/astro-world" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<style>                                                                         
-table, th, td{                                                                   
-border: 2px solid white;
-border-radius: 20px;
-padding: 10px;
+<!-- this is the Inline css attributes you can customize and change it as per your liking -->
+<style>  
+/* This is the table, th and td attributes which define the borders lenghts, etc. */
+table, th, td{                                                        
+border: 2px solid white; /*Border color and width*/
+border-radius: 20px;     /*Border roudness more value more rounded*/
+padding: 10px;           /*space between the two borders*/
 }
+/* To fill the hollow space in between the two borders of a music card I've added this, If you wish to change it or remove you can do so */
 table{
 background-color: black;
 }
+/*Style Attributes for the header tag 'Spoteroids' */
 h1{                                                                           
 text-align: center;
 position: relative;
-z-index: 1;
+z-index: 1;         
+/*As I've masked the background to be darkened to highlight the main texts everything could be masked in dark to counter z-index is used*/
 }
+/*These are the attributes that position and specify the background image and body attributes*/
 body{                                                                          
 background-color: #19191a;
-background-image: url('https://i.ibb.co/HfXg4ZZt/image-removebg-preview-1.png');
+background-image: url('https://i.ibb.co/HfXg4ZZt/image-removebg-preview-1.png');  /*You can change the url with yours or even local path*/
 background-position: center;
 background-repeat: no-repeat;
-background-size: contain;
+background-size: contain;  /*Fits through the whole screen rather than enlarging or appearing small*/
 min-height: 100vh;
 width: 100%;
 color: white;
-font-family: 'Montserrat';
+font-family: 'Montserrat'; /*Default font to find errors or just use other text can be changed or removed (I'd not suggest to remove but)*/
 font-weight: 400;
 font-size: 30px;
 position: relative;
 }
+/*As earlier highlights the body rather than darkening*/
 body::before{                                                                   
 content: '';
 position: absolute;
 inset: 0;
 background-color: rgba(0, 0, 0, 0.70);
 } 
+/*Animations for the hyperlink text*/
 a{                                                                              
 color: #f7f8fa;
 }
@@ -58,27 +67,33 @@ color: blue;
 </head>
 <body>
 <h1>Spoteroids</h1>
+<!-- This <div> tag is used for horizontally parallel viewing of different music cards rather than being vertical-->
 <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; position: relative; z-index: 1; padding: 30px;"> 
 
 <table style="padding: 0.1px;">
 <tr>
-<th colspan="2" style="font-size: 50px; font-family: 'Sevillana'; letter-spacing:5px;">Bargad</th>
+<th colspan="2" style="font-size: 50px; font-family: 'Sevillana'; letter-spacing:5px;">Bargad</th> <!-- Use of different fonts -->
 </tr>
 <tr>
 <td rowspan="3"><img src="https://c.saavncdn.com/204/bargad-Hindi-2025-20250810000119-500x500.jpg" style="width: 300px; height: 350px; border-radius:10px;"></td>
-<td><b>Song Name:</b> Bargad</td>
+<!-- img src="" can be changed using local path or any online url *note* it should have .jpg or .png extension otherwise image won't display-->
+<td><b>Song Name:</b> Bargad</td> <!--Song Name-->
 </tr>
 <tr>
-<td><b>Artist:</b> Sufr, Toorjo Dey, Arpit Bala</td>
+<td><b>Artist:</b> Sufr, Toorjo Dey, Arpit Bala</td> <!--Artist Name-->
 </tr>
 <tr>
-<td><b>Released on:</b> August 24 2025</td>
+<td><b>Released on:</b> August 24 2025</td> <!--Release Date-->
 </tr>
 <tr>
 <td colspan="3" style="text-align:center;">Click <a href="https://drive.google.com/file/d/14JBN_M9QSfjBVnwxod_5WRnAfbn2qTaR/view?usp=sharing" target="_blank">here</a> to listen to the full song</td>
+<!-- A link embeded music file to view the music for (You can change it or remove it completely-->
 </tr>
 </table>
 
+<!--
+Each of these rest 3 cards are same the above given comments are applicable to them too, if you want to add another table just increase the rowspan="" to your desire limit otherwise it would leave blank areas
+-->
 <table style="padding: 0.1px;">
 <tr>
 <th colspan="2" style="font-size: 50px; font-family: 'Lucy Said Ok Personal Use'; letter-spacing:5px;">Meaningful Love </th>
@@ -136,13 +151,19 @@ color: blue;
 </tr>
 </table>
 
+<!-- 
+  This is the footer tag which I've used to add credits and some of my affliated links and stuff you can either remove or just change it
+-->
 <footer style="text-align: center; padding: 30px; color: gray; font-size: 14px; position: relative; z-index: 1; border-top: 1px solid #333; margin-top: 40px;">
-<p>Made by Abdul Rehman &copy; 2026</p>
+<p>Made by Abdul Rehman &copy; 2026</p> <!--Your Name -->
+
+<!-- A google form button I'd suggest to remove since it's no really much of a use to yours :) -->
 <p>All song credits belong to their respective artists and labels.</p>
 <p>For Suggestions Please Fill out  <a href="https://forms.gle/FUDZccypwn66XbBN8" target="_blank"> <button style="background-color: gray; border: none; border-radius: 5px; color: black; cursor: pointer;"> Click Here! </button>
 </a>
-<p> The given File is on Github with my other Projects do check it out :D</p>
+<p> The given File is on Github with my other Projects do check it out :D</p> <!-- Optional -->
 <p>
+<!-- My affiliated links -->
 <a href="https://github.com/captainarehman" target="_blank" style="color: white;"> <i class="fa-brands fa-github" style="font-size: 24px;"></i>&nbsp;&nbsp; </a>
 <a href="https://www.linkedin.com/in/abdul-rehman-captain-374b8029a/" target="_blank" style="color: white; text-decoration: none;"> <i class="fa-brands fa-linkedin" style="font-size: 24px;"></i>
 </a>
