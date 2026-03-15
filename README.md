@@ -10,7 +10,7 @@ Hey Everyone! I'm Abdul Rehman Captain and I've made this project of mine of wha
 I'm assuming you're new to GitHub so I'll do a detailed steps
 
 1. Open the Repo 
-2. Click on `Music Page (Spoteroids).html` as this ->  <img src="https://i.ibb.co/NnNmJ8gz/image.png" style="width:675px; height:135px; border: 5px solid black;">
+2. Click on `index.html` as this (the given screenshot is old but it should cover 😛)->  <img src="https://i.ibb.co/NnNmJ8gz/image.png" style="width:675px; height:135px; border: 5px solid black;">
 3. Upon opening you'd come directly to the code page of the file, on the **Top Right** corner of the code along with the file name  would be a download button :arrow_down: <br> <img src="https://i.ibb.co/VWSSWbpR/image.png" >
 4. Download the file and open either using *Notepad* or *VS Code* and run it on your browser 😸
 ---
